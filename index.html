@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+
+<html>
+	<script type='text/javascript'>
+		function scrollToName(id)
+		{
+		    $('html, body').animate({ scrollTop: $('a[id="' + id + '"]').offset().top - 15 }, 1500); 
+		    return false;
+		}
+	</script>
+
+	<head>
+		<link rel="stylesheet" type="text/css" href="Portfolio.css">
+		<title> Akhila Narayan </title>
+		<meta charset="UTF-8">
+		<link rel="shortcut icon" href="akhila.jpg" />
+
+		<!-- SCROLLING USING NAVIGATION JS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("a").on('click', function(event) {
+
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    } // End if
+			  });
+			});
+		</script>
+		<style>
+			body, html, .main {
+			    height: 100%;
+			}
+
+			section {
+			    min-height: 100%;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!-- NAVIGATION BAR -->
+		<ul>
+			<li style="float:left; font-weight: bold; font-size: 125%"><a href="Portfolio.html" class="page-scroll">Akhila Narayan Portfolio</a></li>
+        	<li style="float:right"><a href="#resume" class="page-scroll">Resume</a></li>
+        	<li style="float:right"><a href="#projects" class="page-scroll">Projects</a></li>
+        	<li style="float:right"><a href="#about" class="page-scroll">About</a></li>
+        	<li style="float:right"><a href="#home" class="page-scroll" onclick=
+        "return scrollToName('Home');">Home</a></li>
+        </ul>
+
+		<div id="text">
+			<!-- HOME PAGE -->
+			<div id="home">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p id="name"> Akhila Narayan <a name="Home"></a></p>
+				<p id="school"> Rutgers University Class of 2018 | Computer Science, Economics </p>
+				
+				<div id="images">
+					<a href="https://www.linkedin.com/in/akhila-narayan-780452b1" target="_blank">
+						<img id="pic" src="linkedin.png" />
+					</a>
+					<a href="https://github.com/akhila17" target="_blank">
+						<img id="pic2" src="github.png"/>
+					</a>
+				</div>
+				
+				<p id="school"> Contact me at 
+					<a href="mailto:akhila.narayan96@gmail.com" target="_top">akhila.narayan96@gmail.com </a>
+				</p>
+
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+			</div>
+
+			<!-- ABOUT PAGE -->
+			<div id="about">
+				<p id="aboutinfo"> My name is Akhila Narayan and I am a Junior at Rutgers University majoring  <img src="akhila.jpg" width="275" height="275" align="right"> in Computer Science and minoring in Economics. I find ways to express myself using music, art, and my computer. Whether I am playing the piano, doodling on scraps of paper, or typing away on the computer, I am always on the go, trying to think of creative alternatives for the problems that life throws at me. With my diverse range of interest and experiences, I hope to one day contribute to a groundbreaking form of technology. </p>
+				
+				<p style="font-family: avenir; font-size: 125%; margin-left: 15%" > <i>“It does not do to dwell on dreams and forget to live.”</i> <br>- J.K. Rowling, Harry Potter and the Sorcerer's Stone </p>
+
+				<p style="text-align: right; font-family:cambria; font-size:400%;"> Who am I? &nbsp;&nbsp;&nbsp;</p>
+			</div>
+
+			<!-- PROJECTS PAGE -->
+			<div id="projects">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p style="text-align: center; font-family:cambria; font-size:300%;"> Projects Coming Soon!</p>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+			</div>
+			
+			<!-- RESUME PAGE -->
+			<div align="center" id="resume">
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<p style="text-align: center; font-family:cambria; font-size:250%;"> Resume </p>
+				<p>&nbsp;</p>
+				<iframe src="PortfolioResume.pdf" style="width:718px; height:700px;" frameborder="0"></iframe>
+				<p> Please contact me for full resume </p>
+			</div>
+
+
+		</div>
+	</body>
+</html>

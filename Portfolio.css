@@ -1,0 +1,112 @@
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    border: 1px solid #d9d9d9;
+    background-color: #e6e6e6;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    left: 0;
+}
+
+/*.active {
+	background-color: white;
+    font-weight: bold;
+}*/
+
+li a.active {
+    background-color: white;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: #666;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/*li a:hover {
+    background-color: #667;
+}*/
+
+#name {
+	text-align: center;
+	font-family:cambria;
+	font-size:400%;
+}
+
+#school {
+	text-align: center;
+	font-family: avenir;
+	font-size: 150%;
+}
+
+#images {
+    text-align: center;
+}
+
+#pic {
+	width: 100px;
+	height: 100px;
+}
+
+#pic2 {
+	width: 92px;
+	height: 92px;
+}
+
+a:link {
+	color: black;
+    text-decoration: none;
+}
+
+a:hover {
+	font-weight: bold;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+#about {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    width: 100%;
+    left: 0;
+}
+
+#abouttext {
+	padding: 5%;
+	width: 60%;
+}
+
+#aboutinfo {
+	padding: 5%;
+	font-family: avenir;
+	font-size: 150%;
+}
+
+#mypic {
+	width: 275px;
+	height: 275px;
+}
+
+#resume {
+    margin: 0;
+    padding: 0;
+    border: 1px solid #e7e7e7;
+    background-color: #f3f3f3;
+    width: 100%;
+    left: 0;
+}
+
+iframe {
+	left: 25%;
+}
