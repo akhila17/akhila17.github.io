@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 
 <html>
-	<script type='text/javascript'>
-		function scrollToName(id)
-		{
-		    $('html, body').animate({ scrollTop: $('a[id="' + id + '"]').offset().top - 15 }, 1500); 
-		    return false;
-		}
-	</script>
-
 	<head>
+		<script type="text/javascript">
+			if (screen.width <= 800) {
+				window.location = "http://google.com";
+			}
+		</script>
+
 		<link rel="stylesheet" type="text/css" href="Portfolio.css">
 		<title> Akhila Narayan </title>
 		<meta charset="UTF-8">
@@ -57,7 +55,7 @@
 	<body>
 		<!-- NAVIGATION BAR -->
 		<ul>
-			<li style="float:left; font-weight: bold; font-size: 125%"><a href="Portfolio.html" class="page-scroll">Akhila Narayan Portfolio</a></li>
+			<li style="float:left; font-weight: bold; font-size: 125%"><a href="https://akhila17.github.io" class="page-scroll">Akhila Narayan Portfolio</a></li>
         	<li style="float:right"><a href="#resume" class="page-scroll">Resume</a></li>
         	<li style="float:right"><a href="#projects" class="page-scroll">Projects</a></li>
         	<li style="float:right"><a href="#about" class="page-scroll">About</a></li>
